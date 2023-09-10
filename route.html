@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Points on a map</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+
+    
+    <link rel="stylesheet" href="styles_route.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- <style>
+      .output-container {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+      }
+
+      .text-box {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+    </style> -->
+    <div class='dropdown-container'>
+      <h1>Select your destination</h1>
+      <select id='destination-dropdown'></select><br>
+      <button id='find-route-button' class='styled-button'>Find Optimal Route</button>
+
+      <div class="output-container">
+        <!-- <h4 class="output-heading">Output:</h4> -->
+        <div id="outputContainer"></div>
+      </div>
+
+    </div>
+
+
+    <!-- <div class="text-box">
+      <input type="text" id="output" placeholder="Output" readonly>
+    </div> -->
+    
+
+    <div id='map'></div>
+
+  <div class="output-container" id="output"></div>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <script src='script_route.js'></script>
+    
+  </body>
+</html>
